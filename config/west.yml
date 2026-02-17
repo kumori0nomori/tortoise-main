@@ -1,0 +1,22 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: badjeff   # <-- PMW3610
+      url-base: https://github.com/badjeff
+    - name: caksoylar # RGB LED
+      url-base: https://github.com/caksoylar
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: v0.3 #main
+      import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: badjeff
+      revision: zmk-0.3 #main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
+  self:
+    path: config
+# after zmk4.1

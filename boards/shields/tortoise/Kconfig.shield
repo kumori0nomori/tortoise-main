@@ -1,0 +1,5 @@
+config SHIELD_TORTOISE_LEFT
+    def_bool $(shields_list_contains,tortoise_left)
+
+config SHIELD_TORTOISE_RIGHT
+    def_bool $(shields_list_contains,tortoise_right)
